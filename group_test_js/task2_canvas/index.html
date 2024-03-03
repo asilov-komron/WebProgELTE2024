@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    Hue: <input type="range" id="hue" min="0" max="360" value="0"> <br>
+    Saturation: <input type="range" id="saturation" min="0" max="100" value="50"> <br>
+    Lightness: <input type="range" id="lightness" min="0" max="100" value="50"> <br>
+    <button type="button" onclick="setBackgroundColor()">Set background color</button> <br>
+    HSL string: <input type="text" id="hslString" readonly>
+  </form>
+
+  <script src="script.js">
+    
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style for the rectangle */
+        #resizableRectangle {
+            width: 50px; /* Initial width */
+            height: 50px; /* Initial height */
+            background-color: red;
+            margin: 20px;
+            transition: width 0.1s, height 0.1s; /* Add transition for smooth resizing */
+        }
+
+        #colorBox {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            display: inline-block;
+            margin-left: 10px; /* Optional: Add margin for spacing */
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <h1>Hello</h1>
+    <div>
+    <label for="height">height</label>
+    <input id="height" type="range" min="0" max="100" value="50" id="volumeControl">
+    <label for="width">width</label>
+    <input id="width" type="range" min="0" max="100" value="50" id="volumeControl">
+    <label for="colorBox">color</label>
+    <div id="colorBox"></div>
+    </div>
+
+    <div id="resizableRectangle"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
